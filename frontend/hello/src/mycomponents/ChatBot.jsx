@@ -9,7 +9,7 @@ import { GoogleGenAI } from "@google/genai";
 
 
 function Chatbot() {
-  const GEMINI_API_KEY = "AIzaSyDeZEHhlpts4zzLkcsPsHg9WtJe44CrZ8U"; // Store securely in production!
+  const GEMINI_API_KEY = import.meta.env.VITE_GEMINI_API_KEY;
 
   const [typingDots, setTypingDots] = useState(".");
 
